@@ -1,7 +1,7 @@
 FROM php:5.6-apache
 MAINTAINER akira1908jp@gmail.com
 
-RUN apt-get install -y git wget
+RUN apt-get update && apt-get install git wget -y
 
 RUN curl -sS https://getcomposer.org/installer | php
 RUN chmod +x composer.phar
